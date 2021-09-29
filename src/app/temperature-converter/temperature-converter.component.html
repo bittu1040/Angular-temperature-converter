@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd">
+  <a class="navbar-brand" href="#">
+    <img
+      src="../assets/4339133.png"
+      width="30"
+      height="30"
+      class="d-inline-block align-top"
+      alt=""
+    />
+    Temperature converter
+  </a>
+</nav>
+
+<br />
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label>Celsius</label>
+      <input
+        type="number"
+        name="celsius"
+        class="form-control"
+        placeholder="temperature in celcius"
+        [(ngModel)]= "celsius"
+      />
+    </div>
+
+    <br />
+    <div class="form-group">
+      <label>Fahrenheit</label>
+      <input
+        type="number"
+        name="fahrenheit"
+        class="form-control"
+        placeholder="temperature in fahrenheit"
+        [(ngModel)]= "fahrenheit"
+      />
+    </div>
+  </form>
+  <br />
+  <button (click)="convertTemp()" class="btn btn-primary">Convert</button>
+  <br>
+  <br>
+  <button (click)="reset()" class="btn btn-primary"> Reset</button>
+</div>
